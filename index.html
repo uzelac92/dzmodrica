@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="dzmodrica">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>DZ MODRICA</title>
+  
+  <meta property="description" content="Dom zdravlja Modriča je javna zdravstvena ustanova primarnog nivoa. Pokriva zdravstvenom uslugom stanovništvo dvije opštine: Modriče i Vukosavlje, što je oko 37.000 stanovnika.">
+  
+  <meta property="og:title" content="DZ MODRICA">
+  <meta property="og:description" content="Dom zdravlja Modriča je javna zdravstvena ustanova primarnog nivoa. Pokriva zdravstvenom uslugom stanovništvo dvije opštine: Modriče i Vukosavlje, što je oko 37.000 stanovnika.">
+  <meta property="og:image" content="https://www.dzmodrica.com/laboratorija/images/logo-share.png">
+  <meta property="og:url" content="https://www.dzmodrica.com">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:title" content="DZ MODRICA">
+  <meta name="twitter:description" content="Dom zdravlja Modriča je javna zdravstvena ustanova primarnog nivoa. Pokriva zdravstvenom uslugom stanovništvo dvije opštine: Modriče i Vukosavlje, što je oko 37.000 stanovnika.">
+  <meta name="twitter:image" content="https://www.dzmodrica.com/laboratorija/images/logo-share.png">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="stylesheet" href="stilovi/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet" href="stilovi/styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+  <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/verifikacija.js"></script>
+  
+  <base href="/">
+
+</head>
+<body ng-controller="glavniCtrl">
+  <div class="cirlat" ng-click="pismo=!pismo"><span class="lat" ng-hide="pismo"><b>lat</b>/ћир</span><span class="cir" ng-show="pismo">lat/<b>ћир</b></span></div>
+  <div ng-if="!pismo" ng-include="'/indexlat.html'"></div>
+  <div ng-if="pismo" ng-include="'/cyrillic/indexcir.html'"></div>
+</body>
+

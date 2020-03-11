@@ -1,0 +1,146 @@
+.modal .modal-dialog {
+    top: 10%!important;
+    height: auto !important;
+
+}
+.xbutton{
+    padding:10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    outline: none !important;
+    box-shadow: none;
+    border: none;
+    font-size: 2rem;
+}
+.button:active,
+.button:focus{
+    outline: none !important;
+    border: none !important;
+}
+.modal-header{
+    padding: 20px;
+    color: rgb(73, 73, 73);
+    display: block;
+    h2{
+        font-size: 1.5rem;
+        letter-spacing: -2px;
+        font-weight: 500;
+    }
+    h4{
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
+}
+.modal-body{
+    .uputstvo{
+        .naslovup{
+            color: $basiccolor1;
+        }
+        p{
+            padding: 5px;
+            background: rgba(128, 128, 128, 0.233);
+            text-align: justify;
+        }
+    }
+    .modaljedan{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        background-position: center;
+        position: relative;
+        border: 5px solid rgb(131, 131, 131);
+        span{
+            background: rgba(220, 20, 60, 0.548);
+            color: white;
+            text-align: right;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 15px;
+        }
+    }
+    .labsl{
+        margin-top: 50px;
+        background-image: url(../resursi/mihaela.jpg);
+    }
+    .pedsl{
+        background-image: url(../resursi/ped1.jfif);
+    }
+    .pedsl2{
+        background-image: url(../resursi/ped2.jpg);
+    }
+    .patsl{
+        background-image: url(../resursi/patsl.jpg);
+    }
+    .stomsl{
+        background-image: url(../resursi/stomsl.jpg);
+    }
+    .cbrsl{
+        background-image: url(../resursi/cbrsl.jpg);
+    }
+    .hessl{
+        background-image: url(../resursi/hes.jpg);
+    }
+    .modaldva{
+        padding: 20px;
+        color: rgb(88, 88, 88);
+        text-align: justify;
+        @media screen and (max-width : 480px) {
+            padding: 4px;
+        }
+    }
+    .modaltri{
+        display: block;
+        padding-top: 50px;
+        min-height: 300px;
+        height: auto;
+        span{
+            background: rgba(220, 20, 60, 0.548);
+            color: white;
+            text-align: right;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 15px;
+        }
+    }
+}
+.modal-footer{
+    button{
+        padding: 5px;
+        font-size: 1.2rem;
+        background: rgba(139, 139, 139, 0.384);
+        border: 1px solid black;
+        color: rgb(48, 47, 47);
+        
+        width: 200px;
+        margin-left: 20px;
+        a{
+            color: rgb(48, 47, 47);
+        }
+    }
+    .link{
+        padding: 5px;
+        margin: 5px 0 0 0;
+        background: rgb(77, 76, 76);
+        color: white;
+        cursor: pointer;
+    }
+    .preuzmiletakhiv{
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0 0 0;
+        background: rgb(77, 76, 76);
+        cursor: pointer;
+    }
+}
+a,
+a:hover{
+    color:white;
+    text-decoration: none;
+    font-weight: 600; 
+    text-align: center;    
+    margin: 0 !important; 
+}

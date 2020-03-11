@@ -1,0 +1,345 @@
+<header class="w-100 p-3 d-flex align-items-center justify-content-between">
+    <a href="../" class="float-left" ng-click="iskljuciMe()">
+        <img class="w-5" src="images/logo-modrica.png" alt="Logo DZ Modrica">
+    </a>
+    <a href="" class="float-right text-right text-dark w-100" ng-click="iskljuciMe()">
+            Odjavi se <i class="fas fa-sign-out-alt"></i>
+    </a>
+</header>
+<hr class="bg-secondarry mx-3 ng-scope my-0">
+<section class="h-100 d-flex align-items-center justify-content-center my-5" id="IDstampaj">
+    <div class="col-lg-5 col-12 mx-auto">
+
+      <h1 class="my-5 text-left display-4 d-print-none">Dobro došli,</h1>
+      
+      <h1 class="d-none my-5"></h1>
+
+      <div class="main-card col-12 pl-1">
+        <div class="border border-info py-lg-4 py-2 pr-lg-5 pr-0 ">
+          <h1 class="text-primary m-2">{{ pacijent.nazivPacijenta }}</h1>
+          <h4 class="text-secondary font-weight-light m-2">JMBG: {{ pacijent.pacijentJMBG }}</h4>
+          <h5 class="text-secondary font-weight-light m-2">Ime roditelja: {{ pacijent.pacijentOtac }}</h5>
+          <hr class="bg-info p-1">
+          <h3 class="text-info font-weight-light mx-2 my-lg-4 my-2 d-inline-block pb-2">iFOBT rezultat: <post class="text-danger d-inline-block m-0" ng-if="pacijent.iFOBTrezultat == 'poz'">POZITIVAN</post><post class="text-success" ng-if="pacijent.iFOBTrezultat == 'neg'">NEGATIVAN</post></h4>
+
+          <div class="d-flex align-items-center justify-content-center w-100 m-0 h-50" ng-if="pacijent.iFOBTrezultat == 'poz'">
+            <h3 class="text-info"><u>OBRATITE SE PORODICNOM LJEKARU!</u></h3>
+          </div>
+        </div>
+      </div>
+      <div class="table-card col-12" ng-if="nemaImunoHem">
+        <ul class="table-pac my-3 col-12 m-0 p-0" >
+          <table style="width:100%">
+            <tr>
+              <th>Analiza</th>
+              <th>Rezultat</th> 
+              <th>Jedinice</th>
+              <th>Ref. vrijednost</th>
+            </tr>
+            <tr>
+              <td>T3</td>
+              <td>
+                <div class="rezultat">{{t3}}</div>
+              </td>
+              <td>nmol/l</td>
+              <td>0.92-2.50</td>
+            </tr>
+            <tr>
+              <td>T4</td>
+              <td>
+                <div class="rezultat">{{t4}}</div>
+              </td>
+              <td>nmol/l</td>
+              <td>60.0-120.0</td>
+            </tr>
+            <tr>
+              <td>TSH</td>
+              <td>
+                <div class="rezultat">{{tsh}}</div>
+              </td>
+              <td>uIU/ml</td>
+              <td>0.25-5.00</td>
+            </tr>
+            <tr>
+              <td>fT3</td>
+              <td>
+                <div class="rezultat">{{ft3}}</div>
+              </td>
+              <td>pmol/l</td>
+              <td>4.0-8.3</td>
+            </tr>
+            <tr>
+              <td>fT4</td>
+              <td>
+                <div class="rezultat">{{ft4}}</div>
+              </td>
+              <td>pmol/l</td>
+              <td>9.0-20.0</td>
+            </tr>
+            <tr>
+              <td>Anti TPO At</td>
+              <td>
+                <div class="rezultat">{{antiTPOat}}</div>
+              </td>
+              <td>IU/ml</td>
+              <td>do 8.0</td>
+            </tr>
+            <tr>
+              <td>Anti Tg At</td>
+              <td>
+                <div class="rezultat">{{antiTGat}}</div>
+              </td>
+              <td>IU/ml</td>
+              <td>do 18.0</td>
+            </tr>
+            <tr>
+              <td>CEA</td>
+              <td>
+                <div class="rezultat">{{cea}}</div>
+              </td>
+              <td>ng/ml</td>
+              <td>nepusači do 5.0, pušači do 10.0</td>
+            </tr>
+            <tr>
+              <td>Ca 15-3</td>
+              <td>
+                <div class="rezultat">{{ca153}}</div>
+              </td>
+              <td>pg/ml</td>
+              <td>do 30.0</td>
+            </tr>
+            <tr>
+              <td>Ca 19-9</td>
+              <td>
+                <div class="rezultat">{{ca199}}</div>
+              </td>
+              <td>U/ml</td>
+              <td>do 37.0</td>
+            </tr>
+            <tr>
+              <td>Ca 125</td>
+              <td>
+                <div class="rezultat">{{ca125}}</div>
+              </td>
+              <td>U/ml</td>
+              <td>do 35.0</td>
+            </tr>
+            <tr>
+              <td>tPSA</td>
+              <td>
+                <div class="rezultat">{{tpsa}}</div>
+              </td>
+              <td>ng/ml</td>
+              <td>do 40 god: 0.21-1.72</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>od 40-49 god: 0.27-2.19</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>od 50 do 59 god: 0.27-3.42</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>od 60 do 69 god: 0.22-6.16</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>preko 69 god: 0.27-6.77</td>
+            </tr>
+            <tr>
+              <td>fPSA</td>
+              <td>
+                <div class="rezultat">{{fpsa}}</div>
+              </td>
+              <td></td>
+              <td>U korelaciji sa tPSA</td>
+            </tr>
+            <tr>
+              <td>IgE</td>
+              <td>
+                <div class="rezultat">{{ige}}</div>
+              </td>
+              <td>kUI/l</td>
+              <td>do 120</td>
+            </tr>
+            <tr>
+              <td>Vit.D25 OH</td>
+              <td>
+                <div class="rezultat">{{vitd25oh}}</div>
+              </td>
+              <td>ng/ml</td>
+              <td>oskudan: manji od 20; <br/>nedovoljan: 20-29; dovoljan: 30-100 </td>
+            </tr>
+            <tr>
+              <td>PTH</td>
+              <td>
+                <div class="rezultat">{{pth}}</div>
+              </td>
+              <td>pg/ml</td>
+              <td>9.2-44.6</td>
+            </tr>
+            <tr>
+              <td>Feritin</td>
+              <td>
+                <div class="rezultat">{{feritin}}</div>
+              </td>
+              <td>ng/ml</td>
+              <td>muškarci: 68.0-434.0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>žene, reproduktivna dob: 9.3-159.0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>đene, menopauza: 23.40-278.0</td>
+            </tr>
+            <tr>
+              <td>AFP</td>
+              <td>
+                <div class="rezultat">{{afp}}</div>
+              </td>
+              <td>pg/ml</td>
+              <td>do 4.0</td>
+            </tr>
+            <tr>
+              <td>D - dimer</td>
+              <td>
+                <div class="rezultat">{{dimer}}</div>
+              </td>
+              <td>ng/ml</td>
+              <td>do 500</td>
+            </tr>
+            <tr>
+              <td>FSH</td>
+              <td>
+                <div class="rezultat">{{fsh}}</div>
+              </td>
+              <td>mIU/ml</td>
+              <td>muškarci: 1.7-12.0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>folikularna faza: 2.9-12.0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>Ovulacioni pik: 6.3-24.0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>Lutealna faza: 1.5-7.0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>Menopauza: 17.0-95.0</td>
+            </tr>
+            <tr>
+              <td>βHCG</td>
+              <td>
+                <div class="rezultat">{{bhcg}}</div>
+              </td>
+              <td>mIU/ml</td>
+              <td>4.-6- sedmica: 1500-135300</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>6.-8. sedmica: 10500-209000</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>8.-10. sedmica: 3500-219000</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>10-12. sedmica: 33700-193200</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>12.-14. sedmica: 20300-190000</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>2. trimestar: 4500-114400</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="rezultat"></div>
+              </td>
+              <td></td>
+              <td>3. trimestar: 3500-80000</td>
+            </tr>
+          </table>
+        </ul>
+        </li>
+    </div>
+    <div class="pecatsection d-flex mt-3 col-12 justify-content-end">
+        <div class="pecatdiv m-1"><img width="60%" src="/resursi/MIhapotpis.png" alt=""> <span class="position-absolute">M.P.</span> </div>
+        <div class="pecatdiv m-1"><img width="150%" src="/resursi/mihapecat.svg" alt=""><span class="position-absolute">Potpis odg. lica</span></div>
+        <div class="pecatdiv m-1"><img width="130%" src="/resursi/pecatustanove.svg" alt=""><span class="position-absolute">Pečat odg. lica</span></div>
+    </div>
+    <div class="printbtn d-block mt-5 d-print-none" ng-click="printElem()"><i class="fas fa-print fa-3x"></i><span>Štampaj!</span></div>
+</section>

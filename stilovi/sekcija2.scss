@@ -1,0 +1,169 @@
+.porodicna{
+    margin: 150px 0 150px 0;
+    @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+        margin-top: 50px;
+    }
+    @media screen and (max-width : 580px) {
+        margin-top: 100px;
+    }
+    .porodicnacontent{
+        background: $basiccolor2;
+        width: 98%;
+        max-height: 95%;
+        
+        @media screen and (max-width : 1200px) {
+            box-shadow: none;
+        }
+
+        .naslov{
+            width: 50%;
+            color: $basiccolor1;
+            display: flex;
+            flex-wrap: wrap;
+            
+            @media screen and (max-width : 480px) {
+                width: 100%;
+            }
+            @media screen and (max-width : 800px) and (min-width : 500px) {
+                float: left;
+            }
+            @media screen and (min-width : 801px) {
+                float: none;
+             }
+             @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+                width: 80%;
+                margin-bottom: 30px;
+            }
+            h2{
+            
+            font-size: 3rem;
+            line-height: 2.5rem;
+            margin-top: 20px;
+            letter-spacing: 6px;
+            font-family: condensed;
+            @media screen and (max-width : 480px) {
+                font-size: 2.5rem;
+                line-height: 2rem;
+                letter-spacing: 3px;
+            }
+            }
+            h4{
+                font-family: thincondensed;
+                font-size: 1.5rem;
+                letter-spacing: -1px;
+                color: rgb(88, 88, 88);
+                @media screen and (max-width : 480px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .oporodicnoj{
+            width: 70%;
+            @media screen and (max-width : 800px) {
+                width: 100vw;
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+                width: 80%;
+            }
+            h2{
+                letter-spacing: -2px;
+                font-size: 2rem;
+                font-weight: bold;
+                color: $basiccolor1;
+                line-height: 1.3rem;
+                transform: translateX(-30px);
+                @media screen and (max-width : 800px) {
+                    display: none;
+                }
+            }
+            h4{
+                font-size: .9rem;
+                color: rgb(88, 88, 88);
+                transform: translateX(-30px);
+                @media screen and (max-width : 800px) {
+                    display: none;
+                }
+            }
+            p{
+                column-count: 3;
+                @media screen and (max-width : 480px) {
+                   column-count: 1;
+                   font-size: .8rem;
+                }
+                @media screen and (max-width : 800px)  and (min-width : 501px) {
+                    column-count: 2;
+                 }
+                 
+            }
+            span{
+                float: right;
+                text-align: right;
+                color: rgb(255, 136, 0);
+            }
+        }
+    }
+    .raspored{
+        border-radius: 20px;
+        
+        margin: 30px 0 30px 0;
+        padding: 0px 10px 0 0  !important;
+        .zaglavlje{
+            font-weight: 600;
+            padding-top: 10px;
+            transform: scaleX(.98);
+            border-bottom: 1px solid grey;
+            margin: 0 10px 0 0 !important;
+        }
+        .tablepor{
+            height:350px;
+            overflow-y: auto;
+            margin-top: 10px;
+            
+            &::-webkit-scrollbar{
+                background: white;
+                box-shadow: inset 0 0 5px rgb(92, 91, 91);
+                border-radius: 10px;
+
+            }
+            &::-webkit-scrollbar-thumb{
+                background: rgb(88, 88, 88);
+                border-radius: 10px;
+                margin: 4px !important;
+
+            }
+            li{
+                color:rgb(27, 27, 27);
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                &:nth-of-type(odd){
+                    background: rgba(153, 153, 153, 0.219);
+                }
+            }
+        }
+    }
+    .prikaz{
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        margin: 20px 0 20px 0;
+        color: black;
+        text-align: center;
+        width: 25%;
+        @media screen and (max-width : 480px) {
+            width: 75%;
+            margin: 0;
+        }
+        @media screen and (max-width : 800px) and (min-width : 501px){
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        &:hover{
+            color: tomato;
+        }
+    }
+
+}

@@ -1,0 +1,163 @@
+footer {
+  text-align: center;
+  height: 50vh;
+  width: 100vw;
+  background: white;
+  margin-top: 100px;
+  position: relative;
+  border-top-width: 10px;
+  border-top-style: solid;
+  -o-border-image: linear-gradient(to right, #0084ff, rgba(204, 3, 144, 0.685)) 1 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#0084ff), to(rgba(204, 3, 144, 0.685))) 1 1;
+     border-image: linear-gradient(to right, #0084ff, rgba(204, 3, 144, 0.685)) 1 1;
+}
+
+footer .kontakt {
+  padding-left: 10px;
+}
+
+footer .kontakt h3 {
+  color: #5e5d5d;
+  font-weight: bold;
+}
+
+footer .kontakt p {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #535353;
+}
+
+footer .kontakt .contactform h3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(228, 63, 63, 0.795)), to(rgba(4, 149, 245, 0.884)));
+  background-image: linear-gradient(to right, rgba(228, 63, 63, 0.795), rgba(4, 149, 245, 0.884));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -MOZ-background-clip: text;
+  width: 100%;
+}
+
+footer .kontakt .contactform div {
+  font-weight: 600;
+}
+
+footer .kontakt .contactform input {
+  margin-left: 20px;
+  width: 400px;
+  border-radius: 20px;
+  border: 1px solid rgba(220, 20, 60, 0.781);
+}
+
+footer .kontakt .contactform input:nth-of-type(3) {
+  height: 100px;
+  border-radius: 0;
+  background: rgba(50, 161, 205, 0.103);
+}
+
+footer .kontakt .lijevo {
+  height: 150px;
+  margin-left: 150px;
+}
+
+footer .kontakt .lijevo div {
+  height: 50px;
+}
+
+footer .kontakt .uprava {
+  border-right: 1px solid grey;
+}
+
+footer .kontakt .uprava .upravacard {
+  display: block;
+  margin: 10px;
+}
+
+footer .kontakt .uprava .upravacard .slika {
+  width: 150px;
+  height: 150px;
+  border: 3px solid rgba(220, 20, 60, 0.747);
+  border-radius: 100px;
+  background: red;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .kontakt .uprava .upravacard .slika1 {
+  background-image: url(/resursi/direktor.jfif);
+}
+
+footer .kontakt .uprava .upravacard .slika2 {
+  background-image: url(/resursi/sekretarica.jpg);
+}
+
+footer .kontakt .uprava .upravacard .slika3 {
+  background-image: url(/resursi/glsestra.jpg);
+}
+
+footer .kontakt .uprava .upravacard p {
+  text-align: center;
+  font-weight: 800;
+}
+
+footer .kontakt .uprava .radnouprava {
+  width: 100%;
+}
+
+footer .kontakt .uprava .radnouprava h3 {
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+footer .kontakt .uprava .radnouprava p {
+  width: 100%;
+}
+
+footer .copyr {
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  background: #444444;
+  width: 100vw;
+  color: white;
+  -webkit-box-shadow: 0 0 5px grey;
+          box-shadow: 0 0 5px grey;
+  z-index: 1;
+}
+
+footer .copyr .linkovifooter {
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 50px;
+  top: -25px;
+  z-index: -1;
+}
+
+footer .copyr .linkovifooter .linkbtn {
+  padding: 5px;
+  margin-right: 10px;
+  background: #444444;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: .9rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+footer .copyr .linkovifooter .linkbtn:hover {
+  background: rgba(220, 20, 60, 0.849);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  height: 50px;
+}
+/*# sourceMappingURL=footer.css.map */

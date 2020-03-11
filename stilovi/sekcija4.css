@@ -1,0 +1,208 @@
+.section2 {
+  margin-top: 100px;
+  position: relative;
+  height: auto;
+  overflow-x: hidden;
+  background-image: url(../resursi/sekcijakartice.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  .section2 {
+    background-size: 0;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 801px) and (orientation: portrait) {
+  .section2 {
+    margin-top: 200px;
+  }
+}
+
+.sec2cardholder {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  z-index: 7;
+}
+
+@media (max-width: 480px) {
+  .sec2cardholder {
+    margin-top: 0;
+  }
+}
+
+.sec2card {
+  width: 300px;
+  height: 500px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+  margin: 15px 10px 15px 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (max-width: 480px) {
+  .sec2card {
+    margin: 20px 5px 10px 5px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 501px) {
+  .sec2card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 801px) and (orientation: portrait) {
+  .sec2card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media screen and (aspect-ratio: 4 / 3), (aspect-ratio: 5 / 4) {
+  .sec2card {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-top: 0;
+  }
+}
+
+.sec2card .img {
+  width: 100%;
+  height: 50%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sec2card .img1 {
+  background-image: url(../resursi/card1.jpg);
+}
+
+.sec2card .img2 {
+  background-image: url(../resursi/card2.JPG);
+}
+
+.sec2card .img3 {
+  background-image: url(../resursi/card3.jpg);
+}
+
+.sec2card .img4 {
+  background-image: url(../resursi/card4.jpg);
+}
+
+.sec2card .img5 {
+  background-image: url(../resursi/card5.jfif);
+}
+
+.sec2card .txt {
+  width: 100%;
+  height: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.281)));
+  background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.281));
+  position: relative;
+  text-align: justify;
+}
+
+.sec2card .txt h3 {
+  z-index: 3;
+}
+
+.sec2card .txt h3::after {
+  content: '';
+  position: absolute;
+  top: 34%;
+  left: 33%;
+  background: #990909;
+  height: 1px;
+  width: 100px;
+}
+
+.sec2card .txt p {
+  color: black;
+  z-index: 3;
+}
+
+.sec2card .txt::after {
+  content: '';
+  width: 100%;
+  border-bottom: 40px solid white;
+  border-right: 300px solid transparent;
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+
+@media (max-width: 480px) {
+  .sec2card .txt::after {
+    border-right: 350px solid transparent;
+  }
+}
+
+.sec2card:hover .cover {
+  opacity: 1;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  z-index: -2;
+}
+
+.sec2naslov {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #007fd3;
+}
+
+@media (max-width: 480px) {
+  .sec2naslov {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    text-align: left !important;
+    width: 70vw;
+  }
+}
+
+.sec2naslov h3 {
+  font-family: condensed;
+  font-size: 3rem;
+  line-height: 2.4rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (aspect-ratio: 4 / 3), (aspect-ratio: 5 / 4) {
+  .sec2naslov {
+    display: none;
+  }
+}
+
+.sec2naslov h4 {
+  font-family: thincondensed;
+  font-size: 1.7rem;
+  line-height: 1.2rem;
+  color: #141414;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=sekcija4.css.map */

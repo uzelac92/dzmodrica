@@ -1,0 +1,46 @@
+$basiccolor1 : cornflowerblue;
+$basiccolor2 : white;
+$basiccolor3 : rgb(252, 141, 183);
+@mixin horiz {
+    justify-content: center;
+}
+@mixin horizself {
+    justify-self: center;
+}
+@mixin transition {
+    transition: .3s ease;
+}
+@font-face {
+    font-family: 'condensed';
+    src: url(/resursi/ExoCondensed/Exo2-BlackCondensed.otf) format('opentype');
+}
+@font-face {
+    font-family: 'thincondensed';
+    src: url(/resursi/ExoCondensed/Exo2-ThinCondensed.otf) format('opentype');
+}
+@import "header";
+@import "newssection";
+@import "sekcija1";
+@import "sekcija2";
+@import "sekcija3";
+@import "hitnasatanja";
+@import "sekcija4";
+@import "sekcija5";
+@import "sekcija6";
+@import "footer";
+@import "modal";
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+}
+html{
+    
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+

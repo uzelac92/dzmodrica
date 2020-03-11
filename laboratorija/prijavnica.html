@@ -1,0 +1,38 @@
+<div class="height-100 bg-login d-flex justify-content-center align-items-center">
+    <div class="col-lg-9 col-12 d-flex flex-wrap align-items-center">
+        <div class="d-flex flex-wrap col-lg-7 col-12 align-items-center justify-content-center">
+            <a href="../" class="w-15" >
+                <img class="w-100" src="images/logo-modrica.png" alt="">
+            </a>
+            <div class="justify-content-center align-items-center">
+                <h2 class="logo-text text-center font-weight-bold">DOM ZDRAVLJA MODRIČA</h2>
+                <h3 class="sivo-text text-center">VAŠA PRIVATNA LABORATORIJA</h3>
+            </div>
+        </div>
+        <div class="card col-lg-5 col-12 rounded bg-light-grey px-lg-4 py-2 border-0">
+            <form class="login-form">
+                <div class="group my-3">      
+                    <input class="w-100 logInput" type="text" required ng-model="korisnik.korime" ng-enter="ulogujSe()">
+                    <span class="highlight w-100"></span>
+                    <span class="bar w-100"></span>
+                    <label>Korisničko ime</label>
+                </div>
+                <div class="group my-5">      
+                    <input class="w-100 logInput" type="text" required ng-model="korisnik.korsifs" ng-enter="ulogujSe()">
+                    <span class="highlight w-100"></span>
+                    <span class="bar w-100"></span>
+                    <label>Lozinka</label>
+                </div>
+            </form>
+            <button class="spin logbtn mx-auto" id="spin" ng-click="ulogujSe()">
+                <span>Prijava</span>
+                <span>
+                    <svg viewBox="0 0 24 24">
+                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg>
+                </span>
+            </button>                          
+        </div>
+    </div>
+        
+</div>

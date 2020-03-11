@@ -1,0 +1,229 @@
+footer{
+    text-align: center;
+    height: 50vh;
+    width: 100vw;
+    background:white;
+    margin-top: 100px;
+    position: relative;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-image: linear-gradient(to right, rgb(0, 132, 255), rgba(204, 3, 144, 0.685)) 1 1;
+    @media screen and (max-width : 480px),
+    (aspect-ratio : 5/4) {
+        height: auto;
+    }
+    @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+        height: 50vh;
+    }
+    .facebook{
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        transform: translateX(-50%);
+        background: white;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        color: rgb(132, 0, 255);
+    }
+    .kontakt{
+        padding-left: 10px;
+        @media screen and (max-width : 1200px) and (min-width : 801px) and (orientation : portrait){
+            flex-wrap: wrap !important;            
+        }
+        @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : landscape){
+            flex-wrap: wrap !important;
+        }
+        h3{
+            color: rgb(94, 93, 93);
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.1rem;
+            padding-left: 20px;
+            padding-top: 10px;
+            color: rgb(83, 83, 83);
+        }
+        .contactform{
+            @media screen and (max-width : 800px) and (min-width : 500px) and (aspect-ratio: 3/4){
+                width: 50vw !important;
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+                width: 40vw;
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : landscape),
+            screen and (max-width : 800px) and (orientation : landscape){
+                width: 50%;
+            }
+            h3{
+                background-image: linear-gradient(to right, rgba(228, 63, 63, 0.795), rgba(4, 149, 245, 0.884));
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -MOZ-background-clip: text;
+                width: 100%;
+            }
+            div{
+                font-weight: 600;
+            }
+            input{
+                margin-left: 20px;
+                width: 400px;
+                border-radius: 20px;
+                border: 1px solid rgba(167, 167, 167, 0.781);
+                box-shadow: inset 0 0 5px rgb(80, 80, 80);
+                &:nth-of-type(3){
+                    height: 100px;
+                    border-radius: 0;
+                    
+                }
+            }
+        }
+        .lijevo{
+            height: 150px;
+            margin-left: 150px;
+            @media screen and (max-width : 800px) and (orientation : landscape) {
+                margin: 20px 0 80px 0;
+            }
+            @media screen and (max-width : 480px) {
+                margin: 20px 0 80px 0;
+            }
+            @media screen and (max-width : 800px) and (min-width : 500px) and (aspect-ratio: 3/4){
+                width: 40vw !important;
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+                width: 40vw;
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : landscape),
+            screen and (max-width : 800px) and (orientation : landscape){
+                width: 40vw;
+            }
+            margin-left: 20px;
+            div{
+                height:50px;
+                @media screen and (max-width : 480px) {
+                    height: 30px;
+                }
+                p{
+                    @media (max-width : 1200px){
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+        .uprava{
+            border-right: 1px solid grey;
+            @media screen and (max-width : 480px) {
+                border: none;
+            }
+            @media screen and (max-width : 800px) and (min-width : 500px) and (aspect-ratio: 3/4){
+                display: none !important;                
+            }
+            @media screen and (max-width : 1200px) and (min-width : 801px) and (orientation : portrait){
+                width: 100vw !important;  
+                border: none;            
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : landscape),
+            screen and (max-width : 800px) and (orientation : landscape){
+                border: none;
+            }
+            .upravacard{
+                display: block;
+                margin:10px;
+                @media screen and (max-width : 1200px) {
+                    transform: scale(.8);
+                    margin: 0;
+                    
+                }
+                
+                .slika{
+                    width: 150px;
+                    height: 150px;
+                    border: 3px solid rgba(220, 20, 60, 0.747);
+                    border-radius: 100px;
+                    background: red;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+                .slika1{
+                    background-image: url(/resursi/direktor.jfif);
+                }
+                .slika2{
+                    background-image: url(/resursi/sekretarica.jpg);
+                }
+                .slika3{
+                    background-image: url(/resursi/glsestra.jpg);
+                }
+                p{
+                    text-align: center;
+                    font-weight: 800;
+                }
+            }
+            .radnouprava{
+                width: 100%;
+                h3{
+                    font-weight: 800;
+                    font-size: 1.1rem;
+                    width: 100%;
+                    
+                }
+                p{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+    
+    .copyr{
+        position: relative;
+        height: 50px;
+        bottom: 10px;
+        background: rgb(68, 68, 68);
+        width: 100vw;
+        color: white;
+        box-shadow: 0 0 5px grey;
+        z-index: 1;
+        
+        .linkovifooter{
+            height: 20px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right:50px;
+            top:-25px;
+            z-index: -1;
+            @media screen and (max-width : 480px) {
+                transform: scale(.8);
+             }
+            .linkbtn{
+                padding: 5px;
+                margin-right: 10px;
+                background: rgb(68, 68, 68);
+                color: white;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: .9rem;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px; 
+                height: 30px;               
+                @include transition;
+                &:hover{
+                    background: rgba(220, 20, 60, 0.849);
+                    transform: translateY(-8px);
+                    height:50px;
+                    @include transition;
+                }
+                @media screen and (max-width : 800px){
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,72 @@
+.galerija {
+  height: auto;
+  padding-left: 100px;
+}
+
+.galerija .red .imgcircle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  position: relative;
+  width: 200px;
+  margin: 0 2px 0 2px;
+  cursor: pointer;
+}
+
+.galerija .imgdrugired {
+  margin-left: 125px;
+}
+
+.galerija .imgcetvrtired {
+  margin-left: 80px;
+}
+
+.galerija .img1 {
+  background-image: url(/resursi/direktor.jfif);
+}
+
+.galerija .img2 {
+  background-image: url(/resursi/sekretarica.jpg);
+}
+
+.galerija .img3 {
+  background-image: url(/resursi/glsestra.jpg);
+}
+
+.galerija .img4 {
+  background-image: url(/resursi/mihaela.jpg);
+}
+
+.galerija .img5 {
+  background-image: url(/resursi/ped1.jfif);
+}
+
+.galerija .img6 {
+  background-image: url(/resursi/ped2.jpg);
+}
+
+.galerija .img7 {
+  background-image: url(/resursi/card4.jpg);
+}
+
+.galerija .img8 {
+  background-image: url(/resursi/CARD1.jpg);
+}
+
+.galerija .img9 {
+  background-image: url(/resursi/mihaela.jpg);
+}
+
+.galerija .img10 {
+  background-image: url(/resursi/card5.jfif);
+}
+
+.galerija .img11 {
+  background-image: url(/resursi/mihaela.jpg);
+}
+
+.galerija .img12 {
+  background-image: url(/resursi/ped1.jfif);
+}
+/*# sourceMappingURL=sekcija6.css.map */

@@ -1,0 +1,97 @@
+
+header{
+    height: 80vh;
+    margin-top: 40px;
+    background-image:url('../resursi/Healthcare.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    z-index: 1;
+    
+    @media screen and (max-width : 480px) {
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+    }
+    @media (max-width : 800px)  and (min-width : 501px) {
+        background-size: cover;
+        height: 60vh;
+    }
+    @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+        background-size: cover;
+        height: 30vh;
+    }
+    @media screen and (aspect-ratio : 4/3),
+    (aspect-ratio : 5/4){
+        height: 80vh;
+        background-size: cover;
+    }
+    nav{
+        transform: translateY(20px);
+        position: fixed !important;
+        @media screen and (max-width : 1200px){
+            position: relative !important;
+        }
+    }
+    .headertitle{
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translatex(-50%);
+        display: flex;
+        justify-content: center;
+        width: auto;
+        flex-wrap: wrap;
+        span{
+            background:rgba(220, 20, 60, 0.63);
+            font-size: 1rem;
+            padding: 10px;
+            color: white;
+        }
+        h1{
+            font-weight: 900;
+            font-size: 4rem;
+            color: white;
+            line-height: 3.2rem;
+            margin-top: 20px;
+        }
+        p{
+            font-family: thincondensed;
+            color: white;
+            font-size: 1.5rem;
+            line-height: 1rem;
+        }
+    }
+    .zigzag{
+        position: absolute;
+        bottom: 0px;
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        span{
+            position: relative;
+            &:nth-of-type(1){
+                width: 20%;
+                height: 0px;
+                border-bottom: 100px solid white;
+                border-left: 20vw solid transparent;
+            }
+            &:nth-of-type(2){
+                width: 50%;
+                height: 0px;
+                border-bottom: 100px solid white;
+                border-right: 50vw solid transparent;
+            }
+            &:nth-of-type(3){
+                width: 30%;
+                height: 0px;
+                border-bottom: 100px solid white;
+                border-left: 30vw solid transparent;
+            }
+            
+        }
+    }
+}

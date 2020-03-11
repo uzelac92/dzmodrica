@@ -1,0 +1,104 @@
+.galerija{
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    .galerijawrapper{
+        width: auto;
+        height: auto;
+
+        .imgcontainer{
+            width: 60vw;
+            display: flex;
+            flex-wrap: wrap;
+            @media screen and (max-width : 480px){
+                width: 100vw;
+            }
+            .imgcircle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 150px;
+                position: relative;
+                width: 15vw;
+                cursor: pointer;
+                @media screen and (max-width : 1200px){
+                    background-size: cover;
+                }
+                @media screen and (max-width : 480px){
+                    width: 33%;
+                }
+                @include transition;
+                i{
+                    opacity: 0;
+                }
+                &::before{
+                    content: '';
+                    width: 15vw;
+                    height: 150px;
+                    position: absolute;
+                    background: cornflowerblue;
+                    opacity: 0;
+                    @include transition;
+                    @media screen and (max-width : 480px){
+                        width: 100%;
+                    }
+                }
+                &:hover::before{
+                    opacity: .4;
+                    @include transition;
+                }
+                &:hover i{
+                    opacity: .8;
+                    @include transition;
+                }
+                &:hover{
+                    background-size: 115%;
+                    @include transition;
+                    @media screen and (max-width : 1200px){
+                        background-size: cover;
+                    }
+                }
+            }
+            
+        }
+    }
+    .img1{
+        background-image: url(/resursi/gal1.jfif);
+    }
+    .img2{
+        background-image: url(/resursi/gal2.jpg);
+    }
+    .img3{
+        background-image: url(/resursi/gal3.jpg);
+    }
+    .img4{
+        background-image: url(/resursi/gal4.jpg);
+    }
+    .img5{
+        background-image: url(/resursi/gal5.jfif);
+    }
+    .img6{
+        background-image: url(/resursi/gal6.jfif);
+    }
+    .img7{
+        background-image: url(/resursi/gal7.jfif);
+    }
+    .img8{
+        background-image: url(/resursi/gal8.jpg);
+    }
+    .img9{
+        background-image: url(/resursi/gal9.jpg);
+    }
+    .img10{
+        background-image: url(/resursi/gal10.jfif);
+    }
+    .img11{
+        background-image: url(/resursi/gal11.jfif);
+    }
+    .img12{
+        background-image: url(/resursi/gal12.jpg);
+    }
+}

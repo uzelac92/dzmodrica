@@ -1,0 +1,227 @@
+.hitna {
+  height: auto;
+  overflow: visible;
+  margin-top: 30px;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .hitna {
+    background-size: cover;
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.hitna .opis {
+  height: 250px;
+  width: 100vw;
+  background-image: url("../resursi/banner-emergency-medicine.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.hitna .opis .hcentar {
+  width: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .hitna .opis .hcentar {
+    width: 95%;
+  }
+}
+
+.hitna .opis .hcentar .hitnaback {
+  background: #fdfcfc;
+  width: 80%;
+  height: 150px;
+  mix-blend-mode: screen;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .hitna .opis .hcentar .hitnaback {
+    font-size: 1.5rem;
+    height: 100px;
+    width: 90%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hitna .opis .hcentar .hitnaback {
+    font-size: 2.5rem;
+    height: 100px;
+  }
+}
+
+.hitna button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: end;
+  padding: 5px 20px 5px 20px;
+  border: 1px solid grey !important;
+  border-radius: 30px;
+  color: #585858;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+.hitna .ohitnoj {
+  position: relative;
+  max-height: 250px;
+  height: auto;
+  overflow-y: hidden;
+  color: #050505;
+  width: 95vw;
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+.hitna .ohitnoj.prosiri {
+  max-height: 1000px;
+  height: auto;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
+}
+
+.hitna .ohitnoj::-webkit-scrollbar {
+  background: white;
+  margin: 20px !important;
+  -webkit-box-shadow: inset 0 0 5px #5c5b5b;
+          box-shadow: inset 0 0 5px #5c5b5b;
+  border-radius: 10px;
+}
+
+.hitna .ohitnoj::-webkit-scrollbar-thumb {
+  background: #585858;
+  border-radius: 10px;
+  margin: 4px !important;
+}
+
+@media screen and (max-width: 800px) {
+  .hitna .ohitnoj {
+    height: 350px;
+  }
+}
+
+.hitna .ohitnoj h3 {
+  letter-spacing: -2px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #505050;
+  line-height: 1.6rem;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.hitna .ohitnoj span {
+  color: rgba(0, 110, 255, 0.938);
+}
+
+.hitna .ohitnoj p {
+  text-align: justify;
+  width: 100%;
+  padding: 10px;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .hitna .ohitnoj p {
+    font-size: .8rem;
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hitna .ohitnoj p {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 801px) and (orientation: portrait) {
+  .hitna .ohitnoj p {
+    font-size: .9rem;
+    line-height: .8rem;
+  }
+}
+
+@media screen and (min-aspect-ratio: 4 / 3) and (max-aspect-ratio: 9 / 6) {
+  .hitna .ohitnoj p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+.hitna .klasifikacija {
+  overflow: visible;
+}
+
+.hitna .klasifikacija .hitno {
+  width: 100vw;
+  max-height: 40px;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+  color: white;
+  overflow: hidden;
+  padding: 10px 0 5px 20px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.hitna .klasifikacija .hitno:nth-child(1) {
+  background: rgba(220, 20, 60, 0.726);
+}
+
+.hitna .klasifikacija .hitno:nth-child(2) {
+  background: rgba(255, 68, 0, 0.74);
+}
+
+.hitna .klasifikacija .hitno:nth-child(3) {
+  background: rgba(0, 128, 0, 0.658);
+}
+
+.hitna .klasifikacija .hitno h3 {
+  font-size: 1rem;
+}
+
+.hitna .klasifikacija .hitno.aktivno {
+  height: auto;
+  max-height: 500px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+/*# sourceMappingURL=sekcija3.css.map */

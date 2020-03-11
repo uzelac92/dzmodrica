@@ -1,0 +1,84 @@
+.newssection{
+    height: auto;
+    padding: 20px 0 20px 0;
+    .news{
+        width: 100vw;
+        position: relative;
+        padding: 5px;
+        height: auto;
+        transition: max-height .3s ease;
+        user-select: none;
+        
+        border-top-left-radius: 1000px;
+        border-bottom-left-radius: 1000px;
+        overflow: hidden;
+        @media screen and (max-width : 1200px){
+            border-radius: 0px;
+        }
+        .naslovnajnovije{
+            position: relative;
+            padding: 10px;
+            height: inherit;
+            background:rgba(220, 20, 60, 0.753);
+            color: white;
+            z-index: 3;
+            user-select: none;
+            font-size: 1.2rem;
+            font-weight: 900;
+            border-radius: 50%;
+            @media screen and (max-width : 1200px){
+                border-radius: 0px;
+                width: 100%;
+                height: 40px;
+                margin-bottom: 20px;
+            }
+            i{
+                margin-left: 10px;;
+            }
+        }
+        .newscard{
+            height: 140px;
+            width: auto;
+            cursor: pointer;
+            transition: opacity .3s ease, height .3s ease .3s ;
+            .newscardimg{
+                background-image: url(/resursi/CARD3.jpg);
+                background-size: cover;
+                border-radius: 100px;
+                background-position: center;
+                height:100px;
+                width: 100px;
+                align-self: flex-start;
+                border: 3px solid rgb(87, 86, 86);
+                @media screen and (max-width : 480px){
+                    align-self: center;
+                }
+            }
+            .img1{
+                background-image: url(/resursi/vijest1.jpg); 
+            }
+            .img2{
+                background-image: url(/resursi/vijest2.jpg); 
+            }
+            .img3{
+                background-image: url(/resursi/vijest3.jpg); 
+            }
+            .newstxt{
+                padding: 5px 5px 5px 10px;
+                color: black;
+                width: 150px;
+                line-height: 1rem;
+                text-align: justify;
+                h4{
+                    border-bottom: 1px black solid;
+                    padding-bottom: 5px;
+                }
+                small{
+                    @media screen and (max-width : 480px) and (orientation : portrait){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

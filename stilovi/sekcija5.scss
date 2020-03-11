@@ -1,0 +1,226 @@
+.vaznidokumenti{
+    height: 80vh;
+    width: 100%;
+    margin: 150px 0 150px 0;
+    @media screen and (max-width : 1200px) {
+        height: auto;
+
+    }
+    @media screen and (aspect-ratio : 16/10) and (min-device-width : 1200px){
+        height: auto;
+    }
+    .centriwrapper{
+        background: rgba(241, 241, 241, 0.596);
+        .centricard{
+            width: 400px;
+            height: 240px;
+            background: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 20px;
+            position: relative;
+            @include transition;
+            cursor: pointer;
+            overflow: hidden;
+            &:hover .cbrimage{
+                box-shadow: 0 0 5px rgba(146, 146, 146, 0.788);
+                @include transition;
+            }
+            .cbrimage,
+            .cmzimage{
+                height: 50%;
+                width: 90%;
+                box-shadow: 0 0 15px rgba(146, 146, 146, 0.788);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+                transform: translatex(-50%);
+                position: absolute;
+                border-radius: 5px;
+                left: 50%;
+                top: 20px;
+                @include transition;
+            }
+            .cbrimage{
+                background-image: url(../resursi/cbr.jpeg);
+            }
+            .cmzimage{
+                background-image: url(../resursi/cmz.jpg);
+            }
+            .centriopis{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                h3{
+                    line-height: 1rem;
+                    font-family: condensed;
+                }
+                p{
+                    width: 100%;
+                    font-size: 1.3rem;
+                    line-height: 1rem;
+                    text-align: center;
+                    font-family: thincondensed;
+                }
+            }
+            
+        }
+        .desniopis{
+            width: 0px;
+            height: 0px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity .3s ease, width .3s ease .3s, height .3s ease .3s;
+            &.active{
+                width: 400px;
+                height: 240px;
+                opacity: 1;
+                transition: opacity .3s ease .3s, width .3s ease;
+            }
+            button{
+                position: relative;
+                display: flex;
+                justify-self: flex-end;
+                padding: 5px 20px 5px 20px;
+                border: 1px solid grey !important;
+                border-radius: 30px;
+                color: rgb(88, 88, 88);
+                font-weight: 600;
+                align-items: center;
+                box-shadow: none !important;
+                outline: none !important;
+            }
+            p{
+                line-height: 1rem;
+                font-size: .9rem;
+                text-align: justify;
+            }
+        }
+    }
+    .folder{
+        width: 110px;
+        height: fit-content;
+        margin: 10px;
+        cursor: pointer;
+        @include transition;
+        @media screen and (max-width : 1200px),
+        screen and (aspect-ratio : 16/10) and (min-device-width : 1200px) {
+            transform: scale(.8);
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+        i{
+            color: rgb(3, 141, 196);
+        }
+        span{
+            text-align: center;
+            margin-top: 10px;
+            font-size: .9rem;
+            font-weight: 500;
+        }
+        &:hover{
+            border-bottom: 1px solid crimson;
+            transform: translateY(-20px);
+            @include transition;
+        }
+    }
+    .vazno{
+        width:410px;
+        margin-right: 0 50px 0 50px;
+        float: right;
+        color: rgb(100, 100, 100);
+        @media screen and (max-width : 480px) {
+            margin: 50px 0 20px 0;
+        }
+        @media screen and (max-width : 1200px) {
+            margin: 50px 0 20px 0;
+            width: 90vw;
+            float: none;
+            text-align: left;
+            display: block;
+            clear: right;
+
+        }
+        @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+            margin: 0;
+        }
+        @media screen and (aspect-ratio : 5/4),
+        screen and (aspect-ratio : 16/10) and (min-device-width : 1200px) {
+            width: 100vw;
+        }
+
+        .naslov{
+            font-weight: 900;
+            font-size: 7rem;
+            line-height: 4rem;
+            @media screen and (max-width : 480px) {
+                font-size: 5rem;
+            }
+            @media (aspect-ratio : 3/4),
+            screen and (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait),
+            screen and (aspect-ratio : 16/10) and (min-device-width : 1200px){
+                margin-top: 50px;
+            }
+            
+            
+        }
+        .podnaslov{
+            font-weight: 900;
+            font-size: 3.5rem;
+            @media screen and (max-width : 480px) {
+                font-size: 2.5rem;
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait),
+            screen and (aspect-ratio : 16/10) and (min-device-width : 1200px){
+                margin-top: 50px;
+                padding: 0 0 0 10px;
+            }
+        }
+        .naslov1{
+            font-weight: 900;
+            font-size: 6.3rem;
+            line-height: 4rem;
+            @media screen and (max-width : 480px) {
+                font-size: 5rem;
+            }
+            @media screen and (max-width : 1200px) and (aspect-ratio : 3/4){
+                width: 60%;
+            }
+        }
+        .podnaslov1{
+            font-weight: 900;
+            font-size: 3.5rem;
+            @media screen and (max-width : 480px) {
+                font-size: 2.5rem;
+            }
+            @media screen and (max-width : 1200px) and (aspect-ratio : 3/4){
+                width: 60%;
+            }
+            @media (max-width : 1200px)  and (min-width : 801px)  and (orientation : portrait){
+                padding: 0 0 0 10px;
+            }
+        }
+    }
+    .iza{
+        height: 170px;
+        width: 100px;
+        
+        background: rgb(100, 100, 100);
+        @media screen and (max-width : 1600px) {
+            display: none;
+        }
+    }
+    
+}
